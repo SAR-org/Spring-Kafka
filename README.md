@@ -11,3 +11,4 @@ Following steps need to be done to test this application
 * Create a topic to publish and consume message from it, in local : bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafka_example
 * Use console consumer to consume messages from the topic, command : bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic kafka_example --from-beginning
 * Start server and publish message using Spring Boot application
+* bin/kafka-topics.sh --list --zookeeper localhost:2181
